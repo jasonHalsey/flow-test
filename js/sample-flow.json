@@ -1,0 +1,368 @@
+{
+	"name": "ns1:timeSeriesResponseType",
+	"declaredType": "org.cuahsi.waterml.TimeSeriesResponseType",
+	"scope": "javax.xml.bind.JAXBElement$GlobalScope",
+	"value": {
+		"queryInfo": {
+			"creationTime": null,
+			"queryURL": "http://waterservices.usgs.gov/nwis/iv/format=json&indent=on&sites=14092500&parameterCd=00060,00065&siteType=ST",
+			"criteria": {
+				"locationParam": "[ALL:14092500]",
+				"variableParam": "[00060, 00065]",
+				"timeParam": null,
+				"parameter": [],
+				"methodCalled": null
+			},
+			"note": [{
+				"value": "[ALL:14092500]",
+				"type": null,
+				"href": null,
+				"title": "filter:sites",
+				"show": null
+			}, {
+				"value": "[ST]",
+				"type": null,
+				"href": null,
+				"title": "filter:siteType",
+				"show": null
+			}, {
+				"value": "[mode=LATEST, modifiedSince=null]",
+				"type": null,
+				"href": null,
+				"title": "filter:timeRange",
+				"show": null
+			}, {
+				"value": "methodIds=[ALL]",
+				"type": null,
+				"href": null,
+				"title": "filter:methodId",
+				"show": null
+			}, {
+				"value": "2016-02-03T22:24:58.962Z",
+				"type": null,
+				"href": null,
+				"title": "requestDT",
+				"show": null
+			}, {
+				"value": "f5b8d500-cac4-11e5-8429-6cae8b6642f6",
+				"type": null,
+				"href": null,
+				"title": "requestId",
+				"show": null
+			}, {
+				"value": "Provisional data are subject to revision. Go to http://waterdata.usgs.gov/nwis/help/?provisional for more information.",
+				"type": null,
+				"href": null,
+				"title": "disclaimer",
+				"show": null
+			}, {
+				"value": "caas01",
+				"type": null,
+				"href": null,
+				"title": "server",
+				"show": null
+			}],
+			"extension": null
+		},
+		"timeSeries": [{
+			"sourceInfo": {
+				"siteName": "DESCHUTES RIVER NEAR MADRAS, OR",
+				"siteCode": [{
+					"value": "14092500",
+					"network": "NWIS",
+					"siteID": null,
+					"agencyCode": "USGS",
+					"agencyName": null,
+					"default": null
+				}],
+				"timeZoneInfo": {
+					"defaultTimeZone": {
+						"zoneOffset": "-08:00",
+						"zoneAbbreviation": "PST"
+					},
+					"daylightSavingsTimeZone": {
+						"zoneOffset": "-07:00",
+						"zoneAbbreviation": "PDT"
+					},
+					"siteUsesDaylightSavingsTime": true
+				},
+				"geoLocation": {
+					"geogLocation": {
+						"srs": "EPSG:4326",
+						"latitude": 44.72595225,
+						"longitude": -121.2469939
+					},
+					"localSiteXY": []
+				},
+				"elevationM": null,
+				"verticalDatum": null,
+				"note": [],
+				"extension": null,
+				"altname": null,
+				"siteType": [],
+				"siteProperty": [{
+					"value": "ST",
+					"type": null,
+					"name": "siteTypeCd",
+					"uri": null
+				}, {
+					"value": "17070306",
+					"type": null,
+					"name": "hucCd",
+					"uri": null
+				}, {
+					"value": "41",
+					"type": null,
+					"name": "stateCd",
+					"uri": null
+				}, {
+					"value": "41031",
+					"type": null,
+					"name": "countyCd",
+					"uri": null
+				}],
+				"oid": null,
+				"metadataTime": null
+			},
+			"variable": {
+				"variableCode": [{
+					"value": "00060",
+					"network": "NWIS",
+					"vocabulary": "NWIS:UnitValues",
+					"variableID": 45807197,
+					"default": true
+				}],
+				"variableName": "Streamflow, ft&#179;/s",
+				"variableDescription": "Discharge, cubic feet per second",
+				"valueType": "Derived Value",
+				"dataType": null,
+				"generalCategory": null,
+				"sampleMedium": null,
+				"unit": {
+					"unitName": null,
+					"unitDescription": null,
+					"unitType": null,
+					"unitAbbreviation": "ft3/s",
+					"unitCode": null,
+					"unitID": null
+				},
+				"options": {
+					"option": [{
+						"value": null,
+						"name": "Statistic",
+						"optionID": null,
+						"optionCode": "00011"
+					}]
+				},
+				"note": [],
+				"related": null,
+				"extension": null,
+				"noDataValue": -999999.0,
+				"timeScale": null,
+				"speciation": null,
+				"categories": null,
+				"variableProperty": [],
+				"oid": "45807197",
+				"metadataTime": null
+			},
+			"values": [{
+				"value": [{
+					"value": "4820",
+					"dateTimeAccuracyCd": null,
+					"qualifiers": ["P"],
+					"censorCode": null,
+					"dateTime": "2016-02-03T14:00:00.000-08:00",
+					"timeOffset": null,
+					"dateTimeUTC": null,
+					"methodID": null,
+					"sourceID": null,
+					"accuracyStdDev": null,
+					"sampleID": null,
+					"methodCode": null,
+					"sourceCode": null,
+					"labSampleCode": null,
+					"offsetValue": null,
+					"offsetTypeID": null,
+					"offsetTypeCode": null,
+					"codedVocabulary": null,
+					"codedVocabularyTerm": null,
+					"qualityControlLevelCode": null,
+					"metadataTime": null,
+					"oid": null
+				}],
+				"units": null,
+				"qualifier": [{
+					"qualifierCode": "P",
+					"qualifierDescription": "Provisional data subject to revision.",
+					"qualifierID": 0,
+					"network": "NWIS",
+					"vocabulary": "uv_rmk_cd",
+					"default": null
+				}],
+				"qualityControlLevel": [],
+				"method": [{
+					"methodCode": null,
+					"methodDescription": "",
+					"methodLink": null,
+					"methodID": 2
+				}],
+				"source": [],
+				"offset": [],
+				"sample": [],
+				"censorCode": []
+			}],
+			"name": "USGS:14092500:00060:00011"
+		}, {
+			"sourceInfo": {
+				"siteName": "DESCHUTES RIVER NEAR MADRAS, OR",
+				"siteCode": [{
+					"value": "14092500",
+					"network": "NWIS",
+					"siteID": null,
+					"agencyCode": "USGS",
+					"agencyName": null,
+					"default": null
+				}],
+				"timeZoneInfo": {
+					"defaultTimeZone": {
+						"zoneOffset": "-08:00",
+						"zoneAbbreviation": "PST"
+					},
+					"daylightSavingsTimeZone": {
+						"zoneOffset": "-07:00",
+						"zoneAbbreviation": "PDT"
+					},
+					"siteUsesDaylightSavingsTime": true
+				},
+				"geoLocation": {
+					"geogLocation": {
+						"srs": "EPSG:4326",
+						"latitude": 44.72595225,
+						"longitude": -121.2469939
+					},
+					"localSiteXY": []
+				},
+				"elevationM": null,
+				"verticalDatum": null,
+				"note": [],
+				"extension": null,
+				"altname": null,
+				"siteType": [],
+				"siteProperty": [{
+					"value": "ST",
+					"type": null,
+					"name": "siteTypeCd",
+					"uri": null
+				}, {
+					"value": "17070306",
+					"type": null,
+					"name": "hucCd",
+					"uri": null
+				}, {
+					"value": "41",
+					"type": null,
+					"name": "stateCd",
+					"uri": null
+				}, {
+					"value": "41031",
+					"type": null,
+					"name": "countyCd",
+					"uri": null
+				}],
+				"oid": null,
+				"metadataTime": null
+			},
+			"variable": {
+				"variableCode": [{
+					"value": "00065",
+					"network": "NWIS",
+					"vocabulary": "NWIS:UnitValues",
+					"variableID": 45807202,
+					"default": true
+				}],
+				"variableName": "Gage height, ft",
+				"variableDescription": "Gage height, feet",
+				"valueType": "Derived Value",
+				"dataType": null,
+				"generalCategory": null,
+				"sampleMedium": null,
+				"unit": {
+					"unitName": null,
+					"unitDescription": null,
+					"unitType": null,
+					"unitAbbreviation": "ft",
+					"unitCode": null,
+					"unitID": null
+				},
+				"options": {
+					"option": [{
+						"value": null,
+						"name": "Statistic",
+						"optionID": null,
+						"optionCode": "00011"
+					}]
+				},
+				"note": [],
+				"related": null,
+				"extension": null,
+				"noDataValue": -999999.0,
+				"timeScale": null,
+				"speciation": null,
+				"categories": null,
+				"variableProperty": [],
+				"oid": "45807202",
+				"metadataTime": null
+			},
+			"values": [{
+				"value": [{
+					"value": "3.16",
+					"dateTimeAccuracyCd": null,
+					"qualifiers": ["P"],
+					"censorCode": null,
+					"dateTime": "2016-02-03T14:00:00.000-08:00",
+					"timeOffset": null,
+					"dateTimeUTC": null,
+					"methodID": null,
+					"sourceID": null,
+					"accuracyStdDev": null,
+					"sampleID": null,
+					"methodCode": null,
+					"sourceCode": null,
+					"labSampleCode": null,
+					"offsetValue": null,
+					"offsetTypeID": null,
+					"offsetTypeCode": null,
+					"codedVocabulary": null,
+					"codedVocabularyTerm": null,
+					"qualityControlLevelCode": null,
+					"metadataTime": null,
+					"oid": null
+				}],
+				"units": null,
+				"qualifier": [{
+					"qualifierCode": "P",
+					"qualifierDescription": "Provisional data subject to revision.",
+					"qualifierID": 0,
+					"network": "NWIS",
+					"vocabulary": "uv_rmk_cd",
+					"default": null
+				}],
+				"qualityControlLevel": [],
+				"method": [{
+					"methodCode": null,
+					"methodDescription": "",
+					"methodLink": null,
+					"methodID": 3
+				}],
+				"source": [],
+				"offset": [],
+				"sample": [],
+				"censorCode": []
+			}],
+			"name": "USGS:14092500:00065:00011"
+		}]
+	},
+	"nil": false,
+	"globalScope": true,
+	"typeSubstituted": false
+}
