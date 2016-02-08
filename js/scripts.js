@@ -62,7 +62,7 @@ $.getJSON(flowAPI, function (json) {
 	// Set the table td text
 		$('.createTime').text(createTime);
     $('.sitename').text(locationName);
-    $('.flowNum').text(flowNum + 'cu ft/s');
+    $('.flowNum').html(flowNum + '&nbsp;cu ft/s');
 
 
     if(flowNum >= 4700) {
