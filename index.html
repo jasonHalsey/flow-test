@@ -1,45 +1,43 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Flow</title>
+        <title>River Flow</title>
         <meta charset = "utf-8">
         <!--Bootstrap latest compiled and minified CSS-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
         <!--Optional theme-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
         <!--Custom CSS-->
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="css/webfont.css">
     </head>
     <body>
         <div class="container">
-            <h1>Flow Test</h1>  
-
-             <table class="table-responsive">
-                <tr id="gauge">
-                    <td>Gauge Site:&nbsp;</td>
-                    <td id="sitename"></td>
-                </tr>
-                <tr>
-                <td>Flow:&nbsp;</td>
-                    <td id="flowNum"></td>
-                </tr>
-            </table>
-            <h3 class="weather_time"></h2>
-            <div class="weather_temp"></div>
-            <div id="weather_icon"> </div>
-            <div class="weather_weather"></div>
-            <div class="weather_text"></div>
-
-            
+            <h1>RiverFlow Test</h1>  
+            <div class="card">
+              <div id="weather_icon" class="card-img-top"> </div>
+              <div class="card-block">
+                <h4 class="card-title">Lower Deschutes River</h4>
+                <p class="weather_text card-text">Loading...</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item weather_weather">Loading...</li>
+                <li class="list-group-item ">Temp:&nbsp;<span class="weather_temp">Loading...</span></li>
+                <li class="list-group-item ">River Gauge:&nbsp;<span class="sitename">v</span></li>
+                <li class="list-group-item ">Flow:&nbsp;<span class="flowNum">Loading...</span></li>
+                <li class="list-group-item ">Recorded At:&nbsp;<span class="createTime">Loading...</span></li>
+              </ul>
+              <div class="card-block">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>      
         </div>
 
 
         <!--Third-party JS-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        
-        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
