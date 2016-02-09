@@ -1,6 +1,6 @@
 
 //Stream Flow Test
-var flowAPI = "http://waterservices.usgs.gov/nwis/iv/?format=json&indent=on&sites=14092500&parameterCd=00060,00065&siteType=ST";
+var flowAPI = "http://waterservices.usgs.gov/nwis/iv/?format=json&indent=on&sites=14076500&parameterCd=00060,00065&siteType=ST";
 
 weatherFn = function(url) {
   $.getJSON(url, function (json) {
@@ -58,14 +58,48 @@ $.getJSON(flowAPI, function (json) {
 	var flowLat = baseString.sourceInfo.geoLocation.geogLocation.latitude
 	var flowLong = baseString.sourceInfo.geoLocation.geogLocation.longitude
 	weatherFn("http://forecast.weather.gov/MapClick.php?lat=" + flowLat + "&lon=" + flowLong + "&FcstType=json");
+	var map = L.mapbox.map('map-one', 'mapbox.outdoors').setView([flowLat,flowLong], 14);
 
-	// Set the table td text
+	var	str = locationName;
+	function getWords(str) {
+    return str.split(/\s+/).slice(0,2).join(" ");
+	}
+
+	L.mapbox.featureLayer({
+	    type: 'Feature',
+	    geometry: {
+	        type: 'Point',
+	        coordinates: [
+	          flowLong,
+	          flowLat
+	        ]
+	    },
+	    properties: {
+	        title: locationName,
+	        description: 'Flow: ' + flowNum + ' ft3/s',
+	        'marker-size': 'large',
+	        'marker-color': '#BE9A6B',
+	        'marker-symbol': 'water'
+	    }
+	}).addTo(map);
+
+		$('.test').html(getWords(str));
 		$('.createTime').text(createTime);
     $('.sitename').text(locationName);
-    $('.flowNum').html(flowNum + '&nbsp;cu ft/s');
+    $('.flowNum').html
+    (flowNum + '&nbsp;ft3/s');
 
 
     if(flowNum >= 4700) {
     	$('#gauge').addClass('success');
     }
 })
+
+
+
+
+$(document).ready(function(){
+
+	L.mapbox.accessToken = 'pk.eyJ1IjoiamFzb25oYWxzZXkiLCJhIjoiY2lrZm5oOWh3MDAxeHUza2w5MnM2aHdzYSJ9.WXf_OK1N34LKLlkBHCt_9w';
+
+});
